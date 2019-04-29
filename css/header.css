@@ -1,0 +1,346 @@
+/**********************************
+Genereal
+**************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  /* you move in a clockwise direction*/
+  padding: 50px 0 0 0;
+  width: 100%;
+
+}
+
+/*
+none	The element does not float, (will be displayed just where it occurs in the text). This is default
+left	The element floats to the left of its container
+right	The element floats the right of its container
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+*/
+
+
+#banks {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: underline;
+  /*
+none : no line is drawn, and any existing decoration is removed.
+underline : draws a 1px line across the text at its baseline.
+line-through : draws a 1px line across the text at its "middle" point.
+inherit: inherits the decoration of the parent.
+
+*/
+
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/**********************************
+Genereal
+**************************************/
+#logo {
+  text-align: center;
+  margin: 35px;
+
+}
+
+/**********************************
+Genereal
+**************************************/
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  /*top an bottom*/
+  /*left and right*/
+  ;
+  font-size: 1.75em;
+  /*is more good to use since it a relative unity compared to px,,,,,font size is the size of the font*/
+  font-weight: normal;
+  /* generally to unbold our headline*/
+  line-height: 0.8em
+    /*determines the amount of space between each line of text*/
+}
+
+/*
+Pixels	EMs	Percent
+13px	0.813em	81.3%
+14px	0.875em	87.5%
+15px	0.938em	93.8%
+16px	1em	100%
+
+Value	Description
+normal	Standard weight. Equivalent of 400 .
+bold	Bold weight. Equivalent of 700 .
+bolder	Bolder than the inherited font weight.
+lighter	Lighter than the inherited font weight.
+
+*/
+/**********************************
+Genereal
+**************************************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+
+
+}
+
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 10px 10px;
+  padding: 0;
+}
+
+/*
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+*/
+
+nav li {
+  display: inline;
+  text-decoration: none;
+  /*display this default to all elements can be block or inline e.g block include div,section,and others but for inline we be talking about inline with the text like the anger <a>*/
+
+}
+
+/*
+	Description	Play it
+inline	Displays an element as an inline element (like <span>). Any height and width properties will have no effect
+block	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+contents	Makes the container disappear, making the child elements children of the element the next level up in the DOM
+flex	Displays an element as a block-level flex container
+grid	Displays an element as a block-level grid container
+inline-block	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+inline-flex	Displays an element as an inline-level flex container
+inline-grid	Displays an element as an inline-level grid container
+inline-table	The element is displayed as an inline-level table
+list-item	Let the element behave like a <li> element
+run-in	Displays an element as either block or inline, depending on context
+table	Let the element behave like a <table> element
+table-caption	Let the element behave like a <caption> element
+table-column-group	Let the element behave like a <colgroup> element
+table-header-group	Let the element behave like a <thead> element
+table-footer-group	Let the element behave like a <tfoot> element
+table-row-group	Let the element behave like a <tbody> element
+table-cell	Let the element behave like a <td> element
+table-column	Let the element behave like a <col> element
+table-row	Let the element behave like a <tr> element
+none	The element is completely removed
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+*/
+nav a {
+  font-weight: 800;
+  /*to make bolder the elements of a in nav*/
+  padding15px 10px;
+
+}
+
+/**********************************
+Genereal
+**************************************/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: bot;
+  /* so that the footer is not part of the float on either left or right*/
+  padding-top: 50px;
+  color: #ccc;
+
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+
+
+}
+
+
+
+
+/**********************************
+Page portfolio
+**************************************/
+#gallery {
+  /* all ids are unique cannot be repea ted on the same page but a class can be used in many different ways*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*to remove the bullet points*/
+}
+
+#gallery li {
+  float: left;
+  /* float to make items appear side by side */
+  width: 45%;
+  /* to take 45% of the parentwidth regardless of the size of the window this means a 10% will be left out untaken*/
+  margin: 2.5%;
+  /* to create space to round up to 100*/
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+
+}
+
+#gallery li p a {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+
+}
+
+/**********************************
+Page:About
+**************************************/
+.profile-photo {
+  display: block;
+  /* by default images are displayed inline with the text,we use block to take up space in the page with width and height and block has much flexibility*/
+  max-width: 200px;
+  /*so that it doe not get larger than this*/
+  margin: 0 auto 30px;
+  /* to seperate About*/
+  border-radius: 20px
+    /* to add rounded corners to your ellement,, the 100% we make the corners so round*/
+
+}
+
+/**********************************
+Page:About
+**************************************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+
+}
+
+.contact-info a {
+  display: block;
+  /*to get some space for which to put the images*/
+  min-height: 20px;
+  /* so that our images will never get shorter than20 px*/
+  background-repeat: no-repeat;
+  /* background images tend to repeat by default so we disallow that*/
+  background-size: 20px 20px;
+  /* this will resize the images to good sizes*/
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  /* to give our links some seperation vertically*/
+
+
+
+}
+
+
+
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+  /* another altanative to add an image...*/
+  /*the dots will allow to move out of a folder to go ouside so that it can reach the path of image*/
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/mail.png');
+  /* another altanative to add an image...*/
+  /*the dots will allow to move out of a folder to go ouside so that it can reach the path of image*/
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/twitter.png');
+  /* another altanative to add an image...*/
+  /*the dots will allow to move out of a folder to go ouside so that it can reach the path of image*/
+}
+
+
+
+
+/**********************************
+Genereal
+**************************************/
+h2 {
+  font-size: 0.75em;
+  /*top*/
+  /*left and right*/
+  /*bottom*/
+  margin: -5px 0 0;
+  /* negative to make elements to be close together*/
+  font-weight: normal;
+
+}
+
+a {
+  color: #6ab47b;
+
+}
+
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+h1,
+h2 {
+  /* seperation of the two but giving them the same properties*/
+  color: #fff;
+  /* this means that the 3fs are applied to all the 6 numbers*/
+}
+
+nav {
+  background: #599a68;
+
+}
+
+nav a,
+nav a:visited {
+  /*nav a:visited and nav a is going to take #fff color*/
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.selected,
+nav a:hover {
+  /*inside the nav for which ther is an a.selected and nav a: hover take the color below*/
+  color: #32673f;
+
+
+}
+
+/*site body*/
+body {
+  background-color: ;
+  color: #999;
+}
+
+/*
+none	Default. Allows floating elements on both sides
+left	No floating elements allowed on the left side
+right	No floating elements allowed on the right side
+both	No floating elements allowed on either the left or the right side
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+
+*/
